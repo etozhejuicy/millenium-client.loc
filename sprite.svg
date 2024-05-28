@@ -1,0 +1,24 @@
+<!-- svg-sprite -->
+<svg id="mysprite" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" focusable="false">
+    
+    <svg id="logo" viewBox="0 0 172 24">
+        <path d="M9.94727 23.5772L3.35967 3.02439V23.5772H0V0H5.63239L11.7259 19.6423L17.8194 0H23.4518V23.5772H20.0922V3.02439L13.5046 23.5772H9.94727Z" fill="currentColor"/>
+        <path d="M28.8519 23.5772H25.4922V0H28.8519V23.5772Z" fill="currentColor"/>
+        <path d="M34.4378 20.7154H47.053V23.5772H31.0781V0H34.4378V20.7154Z" fill="currentColor"/>
+        <path d="M51.9222 20.7154H64.5374V23.5772H48.5625V0H51.9222V20.7154Z" fill="currentColor"/>
+        <path d="M66.0547 0H82.2602V2.86179H69.4144V10.0163H81.5026V12.878H69.4144V20.7154H82.2602V23.5772H66.0547V0Z" fill="currentColor"/>
+        <path d="M99.2248 23.5772L88.2894 3.44715V23.5772H84.9297V0H89.8704L100.773 20.065V0H104.133V23.5772H99.2248Z" fill="currentColor"/>
+        <path d="M115.069 23.5772L104.133 3.44715V23.5772H100.773V0H105.714L116.617 20.065V0H119.976V23.5772H115.069Z" fill="currentColor"/>
+        <path d="M125.438 23.5772H122.078V0H125.438V23.5772Z" fill="currentColor"/>
+        <path d="M130.907 0V14.3415C130.907 18.9919 132.586 21.1382 137.066 21.1382C141.546 21.1382 143.324 18.6341 143.324 13.9837V0H146.684V13.7236C146.684 20.6179 144.016 24 137.066 24C130.116 24 127.547 21.3333 127.547 13.9837V0H130.907Z" fill="currentColor"/>
+        <path d="M158.494 23.5772L151.907 3.02439V23.5772H148.547V0H154.179L160.273 19.6423L166.366 0H171.999V23.5772H168.639V3.02439L162.051 23.5772H158.494Z" fill="currentColor"/>
+    </svg>
+
+    <symbol id="burger" viewBox="0 0 20 18">
+        <path d="M0 16.5039H19.9922" stroke="currentColor" stroke-width="2.88527"/>
+        <path d="M0 9.00391H19.9922" stroke="currentColor" stroke-width="2.88527"/>
+        <path d="M0 1.5H19.9922" stroke="currentColor" stroke-width="2.88527"/>
+    </symbol>
+
+</svg>
+<!-- svg-sprite -->
