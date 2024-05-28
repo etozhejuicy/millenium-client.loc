@@ -1,6 +1,19 @@
+:root {
+  --section-reviews-gap: 2.25rem;
+  @media (min-width: 1200px) {
+    --section-reviews-gap: 4.563rem;
+  }
+}
+
 .section-reviews {
   position: relative;
   z-index: 1;
   display: block;
   width: 100%;
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--section-reviews-gap);
+    column-gap: var(--section-reviews-gap);
+  }
 }

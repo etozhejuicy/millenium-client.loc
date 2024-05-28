@@ -1,6 +1,52 @@
 :root {
-  --card-banner-padding-x: 3.125rem;
-  --card-banner-padding-y: 2.5rem;
+  --card-review-font-size: 1rem;
+  --card-review-line-height: 120%;
+  --card-review-link-size: 1.313rem;
+  --card-review-content-gap: 1.5rem;
+  --card-review-primary-gap: 1.375rem;
+  --card-review-secondary-gap: 3.125rem;
+  --card-review-banner-width: 6rem;
+  --card-review-banner-height: 3rem;
+  --card-review-banner-padding: 0.5rem;
+  --card-review-banner-radius: 0.313rem;
+  --card-review-primary-width: 100%;
+  --card-review-secondary-width: 100%;
+  --card-review-secondary-padding: 2.125rem;
+  --card-banner-padding-x: 1.75rem;
+  --card-banner-padding-y: 1.25rem;
+  --card-review-advantage-fs: 1.75rem;
+  --card-review-advantage-padding-y: 1.634rem;
+  --card-review-advantage-padding-x: 2.125rem;
+  --card-review-other-gap: 1.75rem;
+  --card-review-other-logo-width: 16.75rem;
+  --card-review-other-logo-height: 8.25rem;
+  --card-review-other-logo-padding: 1.75rem;
+  --card-review-description-fs: 1rem;
+  --card-review-name-fs: 1.25rem;
+  --card-review-meo-fs: 0.875rem;
+  --card-banner-background: linear-gradient(0deg, rgba(var(--black-rgb), 0.2), rgba(var(--black-rgb), 0.2)),
+    linear-gradient(180deg, rgba(var(--black-rgb), 0) 0%, rgba(var(--black-rgb), 0.5) 76.81%);
+  --card-banner-color: var(--white-rgb);
+  @media (min-width: 768px) {
+    --card-review-font-size: 1.5rem;
+    --card-banner-padding-x: 3.125rem;
+    --card-banner-padding-y: 2.5rem;
+    --card-review-description-fs: 1.5rem;
+    --card-review-name-fs: 1.75rem;
+    --card-review-meo-fs: 1.125rem;
+  }
+  @media (min-width: 1200px) {
+    --card-review-content-gap: 0;
+    --card-review-banner-width: 12.5rem;
+    --card-review-banner-height: 5.625rem;
+    --card-review-banner-padding: 1.875rem;
+    --card-banner-width: 61.75rem;
+    --card-review-secondary-gap: 10rem;
+    --card-review-secondary-padding: 6.25rem;
+    --card-review-other-logo-width: 23.75rem;
+    --card-review-other-logo-height: 11.25rem;
+    --card-review-other-logo-padding: 3.75rem;
+  }
 }
 
 .card-review {
@@ -10,13 +56,207 @@
   width: 100%;
   &-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    row-gap: var(--card-review-content-gap);
+    column-gap: var(--card-review-content-gap);
+  }
+  &-primary {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: var(--card-review-primary-gap);
+    column-gap: var(--card-review-primary-gap);
+    width: var(--card-review-primary-width);
+    @media (min-width: 1200px) {
+      align-items: center;
+    }
+  }
+  &-title {
+    font-size: var(--card-review-font-size);
+    line-height: var(--card-review-line-height);
+  }
+  &-banner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--card-review-banner-width);
+    height: var(--card-review-banner-height);
+    border-radius: var(--card-review-banner-radius);
+    background-color: rgba(var(--card-banner-color), 0.2);
+    padding: var(--card-review-banner-padding);
+    & > * {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &-link {
+    width: var(--card-review-link-size);
+    height: var(--card-review-link-size);
+    & > * {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   & .card-banner {
     position: relative;
     z-index: 1;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 76.81%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 12rem;
+    color: rgba(var(--card-banner-color), 1);
+    padding: var(--card-banner-padding-y) var(--card-banner-padding-x);
+    border-radius: 0.625rem;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--card-banner-background);
+    }
+    @media (min-width: 768px) {
+      height: 26.5rem;
+    }
+    @media (min-width: 1200px) {
+      width: 61.75rem;
+      height: 34.734rem;
+    }
+    &-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      & > * {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-info {
+      position: relative;
+      z-index: 1;
+      & > .row {
+        --bs-gutter-x: 0.96rem;
+        --bs-gutter-y: 0.96rem;
+      }
+    }
+  }
+  &-advantages {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.125rem;
+      height: 100%;
+      background: var(--grey);
+    }
+  }
+  &-advantage {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.074rem;
+    column-gap: 1.074rem;
+    padding: var(--card-review-advantage-padding-y) var(--card-review-advantage-padding-x);
+    @media (min-width: 1200px) {
+      max-width: 25.625rem;
+    }
+    &-title {
+      font-weight: 600;
+      font-size: var(--card-review-advantage-fs);
+      line-height: 100%;
+      letter-spacing: -0.053rem;
+    }
+    &-description {
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 100%;
+    }
+  }
+  &-secondary {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: var(--card-review-secondary-gap);
+    column-gap: var(--card-review-secondary-gap);
+    width: var(--card-review-secondary-width);
+    padding: var(--card-review-secondary-padding);
+    @media (min-width: 1200px) {
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  }
+  &-description {
+    width: 100%;
+    font-size: var(--card-review-description-fs);
+    line-height: 150%;
+    @media (min-width: 1200px) {
+      width: 40.563rem;
+    }
+  }
+  &-other {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: var(--card-review-other-gap);
+    column-gap: var(--card-review-other-gap);
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 23.765rem;
+    }
+  }
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--card-review-other-logo-width);
+    height: var(--card-review-other-logo-height);
+    padding: var(--card-banner-padding-y) var(--card-banner-padding-x);
+    border: 0.0625rem solid var(--grey);
+    border-radius: 0.625rem;
+    overflow: hidden;
+    & > * {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.974rem;
+    column-gap: 0.974rem;
+  }
+  &-name {
+    font-weight: 600;
+    font-size: var(--card-review-name-fs);
+    letter-spacing: -0.041rem;
+  }
+  &-meo {
+    font-size: var(--card-review-meo-fs);
+    line-height: 100%;
   }
 }
