@@ -1,0 +1,22 @@
+:root {
+    --section-main-inner-padding-y: 11rem;
+}
+
+.section-main {
+    position: relative;
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--section-main-inner-padding-y) 0;
+    }
+    &-text {
+        font-weight: 600;
+        font-size: 1.313rem;
+        line-height: 130%;
+        text-align: left;
+        @media (min-width: 1200px) {
+            font-size: 2.313rem;
+        }
+    }
+}

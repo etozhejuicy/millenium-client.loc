@@ -1,0 +1,16 @@
+:root {
+    --section-advantages-gap: 3.125rem;
+}
+
+.section-advantages {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    &-inner {
+        & > .row {
+            --bs-gutter-x: var(--section-advantages-gap);
+            --bs-gutter-y: var(--section-advantages-gap);
+        }
+    }
+}

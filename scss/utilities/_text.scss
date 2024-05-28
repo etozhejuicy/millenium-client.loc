@@ -166,6 +166,10 @@
     }
 }
 
+.kudryshev-italic {
+    font-family: "Kudryashev W01 Italic";
+}
+
 $fvp-sub: sub;
 $fvp-super: super;
 $fvp-normal: normal;
@@ -173,7 +177,19 @@ $fvp-normal: normal;
 $positions: (
     $fvp-sub: "sub",
     $fvp-super: "super",
-    $fvp-normal: "normal",
+    $fvp-normal: "normal"
+);
+
+$fv-normal: normal;
+$fv-italic: italic;
+$fv-oblique: oblique;
+$fv-unset: unset;
+
+$variants: (
+    $fv-normal: "normal",
+    $fv-italic: "italic",
+    $fv-oblique: "oblique",
+    $fv-unset: "unset"
 );
 
 $fw-100: 100;
@@ -201,7 +217,7 @@ $weights: (
     $fw-900: "900",
     $fw-bold: "bold",
     $fw-bolder: "bolder",
-    $fw-lighter: "lighter",
+    $fw-lighter: "lighter"
 );
 
 $fs-1: 0.25rem;
@@ -221,7 +237,7 @@ $sizes: (
     $fs-5: "5",
     $fs-6: "6",
     $fs-xs: "xs",
-    $fs-lg: "lg",
+    $fs-lg: "lg"
 );
 
 $ln-0: 0;
@@ -243,12 +259,18 @@ $lineHeights: (
     $ln-xs: "xs",
     $ln-sm: "sm",
     $ln-md: "md",
-    $ln-lg: "lg",
+    $ln-lg: "lg"
 );
 
 @each $position, $value in $positions {
     .fvp-#{$value} {
         font-variant-position: #{$value} !important;
+    }
+}
+
+@each $variant, $value in $variants {
+    .fv-#{$value} {
+        font-style: #{$value} !important;
     }
 }
 

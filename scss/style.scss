@@ -13,6 +13,7 @@
 // components
 @import "./components/buttons";
 @import "./components/cards";
+@import "./components/fonts";
 @import "./components/stretched";
 
 // parts
@@ -24,19 +25,19 @@
         font-size: calc(100vw / 768 * 16);
     }
     @media (min-width: 992px) {
-        font-size: calc(100vw / 992 * 16);
+        font-size: calc(100vw / 768 * 16);
     }
     @media (min-width: 1200px) {
-        font-size: calc(100vw / 1440 * 16);
+        font-size: calc(100vw / 1680 * 16);
     }
     @media (min-width: 1440px) {
-        font-size: calc(100vw / 1440 * 16);
+        font-size: calc(100vw / 1680 * 16);
     }
     @media (min-width: 1600px) {
-        font-size: calc(100vw / 1440 * 16);
+        font-size: calc(100vw / 1920 * 16);
     }
     @media (min-width: 1920px) {
-        font-size: calc(100vw / 1600 * 16);
+        font-size: calc(100vw / 1920 * 16);
     }
 }
 
@@ -49,6 +50,25 @@
 html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    font-feature-settings:
+        "clig" off,
+        "liga" off;
+    font-family: "Kudryashev W08 Regular";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: rgba(var(--black-rgb), 1);
+    background-color: rgba(var(--white-rgb), 1);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 #mysprite {
@@ -67,5 +87,5 @@ html {
 .content {
     position: relative;
     flex: 1;
-    padding: var(--content-padding-y) 0 calc(var(--content-padding-y) * 2);
+    padding: var(--header-height) 0 calc(var(--header-height) * 2);
 }
