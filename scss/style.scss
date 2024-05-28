@@ -1,0 +1,67 @@
+// vendor
+@import "../node_modules/wow.js/css/libs/animate.css";
+
+// utility
+@import "./utilities/utility";
+
+// normalize
+@import "./utilities/normalize";
+
+// components
+@import "./components/cards";
+@import "./components/stretched";
+
+// parts
+@import "./parts/card-partner";
+
+:root {
+    font-size: calc(100vw / 375 * 16);
+    @media (min-width: 768px) {
+        font-size: calc(100vw / 768 * 16);
+    }
+    @media (min-width: 992px) {
+        font-size: calc(100vw / 992 * 16);
+    }
+    @media (min-width: 1200px) {
+        font-size: calc(100vw / 1440 * 16);
+    }
+    @media (min-width: 1440px) {
+        font-size: calc(100vw / 1440 * 16);
+    }
+    @media (min-width: 1600px) {
+        font-size: calc(100vw / 1440 * 16);
+    }
+    @media (min-width: 1920px) {
+        font-size: calc(100vw / 1600 * 16);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+#mysprite {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: clip;
+}
+
+.content {
+    position: relative;
+    flex: 1;
+    padding: var(--content-padding-y) 0 calc(var(--content-padding-y) * 2);
+}

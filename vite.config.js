@@ -16,6 +16,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: "/index.html",
+        potfolio: "/potfolio.html",
+        potfolio_item: "/potfolio-item.html",
       },
     },
   },
