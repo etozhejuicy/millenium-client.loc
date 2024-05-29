@@ -1,0 +1,90 @@
+:root {
+    --card-privilege-padding-x: 0;
+    --card-privilege-padding-y: 3.125rem;
+    --card-privilege-gap: 1.488rem;
+    --card-privilege-content-gap: 1.625rem;
+    --card-privilege-top-gap: 0.938rem;
+    --card-privilege-border-radius: 0;
+    --card-privilege-background-color: none;
+}
+
+.card-privilege {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--card-privilege-gap);
+    column-gap: var(--card-privilege-gap);
+    width: 100%;
+    height: 100%;
+    padding: var(--card-privilege-padding-y) var(--card-privilege-padding-x);
+    background-color: rgba(var(--card-privilege-background-color), 1);
+    border-radius: var(--card-privilege-border-radius);
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.375rem;
+        background-color: var(--black);
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: var(--card-privilege-content-gap);
+        column-gap: var(--card-privilege-content-gap);
+        flex: 1;
+    }
+    &-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: var(--card-privilege-top-gap);
+        column-gap: var(--card-privilege-top-gap);
+    }
+    &-cover {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%;
+        overflow: hidden;
+        & > * {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &-suptitle {
+        font-family: "Gotham";
+        font-weight: 700;
+        letter-spacing: 0.01rem;
+        text-transform: uppercase;
+        color: var(--grey-600);
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 1.313rem;
+        line-height: 130%;
+        @media (min-width: 1200px) {
+            font-size: 2.313rem;
+        }
+    }
+    &-description {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 140%;
+        @media (min-width: 1200px) {
+            font-size: 1.5rem;
+        }
+    }
+}

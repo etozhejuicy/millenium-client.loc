@@ -1,0 +1,16 @@
+:root {
+    --section-privilege-gap: 3.125rem;
+}
+
+.section-privilege {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    &-inner {
+        & > .row {
+            --bs-gutter-x: var(--section-privilege-gap);
+            --bs-gutter-y: var(--section-privilege-gap);
+        }
+    }
+}
