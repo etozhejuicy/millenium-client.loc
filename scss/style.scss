@@ -63,7 +63,9 @@ body {
   position: relative;
   z-index: 1;
   height: 100%;
-  font-feature-settings: "clig" off, "liga" off;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
   font-family: "Kudryashev W08 Regular";
   font-size: 1rem;
   font-style: normal;
@@ -92,5 +94,5 @@ body {
 .content {
   position: relative;
   flex: 1;
-  padding: var(--header-height) 0 calc(var(--header-height) * 2);
+  padding: var(--header-height) 0 0 0;
 }
