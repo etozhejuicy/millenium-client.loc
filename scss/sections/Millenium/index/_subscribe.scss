@@ -1,0 +1,31 @@
+@import "../../../parts/subscribe-block";
+
+:root {
+    --subscribe-block-width: 100%;
+    --section-subscribe-padding-y: 3rem;
+    @media (min-width: 768px) {
+        --subscribe-block-width: 35.625rem;
+        --section-subscribe-padding-y: 0;
+    }
+}
+
+.section-subscribe {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    padding: var(--section-subscribe-padding-y) 0;
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+    &-content {
+        & > .subscribe-block {
+            width: var(--subscribe-block-width);
+        }
+    }
+}

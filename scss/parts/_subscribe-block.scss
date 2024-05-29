@@ -1,0 +1,36 @@
+:root {
+    --subscribe-block-padding-x: 2.65rem;
+    --subscribe-block-padding-y: 1.95rem;
+    --subscribe-block-background-color: var(--yellow-rgb);
+    --subscribe-block-content-gap: 1.875rem;
+    --subscribe-block-top-gap: 1.625rem;
+    @media (min-width: 768px) {
+        --subscribe-block-padding-x: 4.85rem;
+        --subscribe-block-padding-y: 3.75rem;
+    }
+}
+
+.subscribe-block {
+    position: relative;
+    z-index: 1;
+    background: rgba(var(--subscribe-block-background-color), 1);
+    padding: var(--subscribe-block-padding-y) var(--subscribe-block-padding-x);
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        row-gap: var(--subscribe-block-content-gap);
+        column-gap: var(--subscribe-block-content-gap);
+    }
+    &-top {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        row-gap: var(--subscribe-block-top-gap);
+        column-gap: var(--subscribe-block-top-gap);
+    }
+    &-agreement {
+        font-family: "Gotham";
+        text-transform: uppercase;
+    }
+}

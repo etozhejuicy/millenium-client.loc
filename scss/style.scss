@@ -15,6 +15,7 @@
 @import "./components/buttons";
 @import "./components/cards";
 @import "./components/fonts";
+@import "./components/forms";
 @import "./components/stretched";
 @import "./components/text";
 
@@ -58,7 +59,9 @@ body {
   position: relative;
   z-index: 1;
   height: 100%;
-  font-feature-settings: "clig" off, "liga" off;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
   font-family: "Kudryashev W08 Regular";
   font-size: 1rem;
   font-style: normal;
