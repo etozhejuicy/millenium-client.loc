@@ -1,0 +1,21 @@
+:root {
+  --section-privilege-padding-y: 4.75rem;
+  --section-privilege-gap: 3.125rem;
+  @media (min-width: 1200px) {
+    --section-privilege-padding-y: 9.375rem;
+  }
+}
+
+.section-privilege {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  padding: var(--section-privilege-padding-y) 0 0 0;
+  &-inner {
+    & > .row {
+      --bs-gutter-x: var(--section-privilege-gap);
+      --bs-gutter-y: var(--section-privilege-gap);
+    }
+  }
+}
