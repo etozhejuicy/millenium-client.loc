@@ -1,503 +1,926 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/favicon-192x192.png"
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/favicon-144x144.png" />
-    <meta name="msapplication-config" content="/browserconfig.xml" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Millenium-Cli - Portfolio</title>
-  </head>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/favicon-144x144.png" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
 
-  <body>
-    <div class="wrapper">
-      <!-- header -->
-      <header class="header" scroll-fixed>
-        <div class="container">
-          <div class="header-inner">
-            <div class="row align-items-center">
-              <div class="col">
-                <div class="header-logo">
-                  <svg
-                    width="100%"
-                    height="100%"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <use xlink:href="./sprite.svg#logo"></use>
-                  </svg>
-                  <a href="/" class="stretched-link"></a>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="header-menu">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <button
-                        type="button"
-                        class="btn btn-icon btn-icon-burger"
-                      >
-                        <svg
-                          width="100%"
-                          height="100%"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <use xlink:href="./sprite.svg#burger"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
+  <title>Millenium-Cli - Portfolio</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header" scroll-fixed>
+      <div class="container">
+        <div class="header-inner">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="header-logo">
+                <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  focusable="false">
+                  <use xlink:href="./sprite.svg#logo"></use>
+                </svg>
+                <a href="/" class="stretched-link"></a>
               </div>
             </div>
-          </div>
-        </div>
-      </header>
-      <!-- main -->
-      <main class="content">
-        <section class="section section-content section-cover">
-          <div class="container">
-            <div class="section-cover-inner">
-              <h1 class="section-cover-title">
-                Наши <br />
-                <span class="fv-italic fw-600">проекты|</span> <br />
-                по <br />
-                интеграции
-              </h1>
-            </div>
-          </div>
-        </section>
-        <!-- example code -->
-        <section class="section section-content section-privilege">
-          <div class="container">
-            <div class="section-privilege-inner">
-              <div class="row align-items-stretch">
-                <div class="col-12 col-md-6 col-xl-4">
-                  <div class="card-privilege">
-                    <div class="card-privilege-cover">
-                      <img
-                        data-src="./images/Millenium/index/privilege/1.jpg"
-                        class="lazyload"
-                      />
-                    </div>
-                    <div class="card-privilege-content">
-                      <div class="card-privilege-top">
-                        <div class="card-privilege-suptitle">
-                          компании всех уровней
-                        </div>
-                        <div class="card-privilege-title">
-                          Современная Online платформа для управления
-                          командировками и MICE
-                        </div>
-                      </div>
-                      <div class="card-privilege-description">
-                        Подстановочный текст про современную платформу
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                  <div class="card-privilege">
-                    <div class="card-privilege-cover">
-                      <img
-                        data-src="./images/Millenium/index/privilege/2.jpg"
-                        class="lazyload"
-                      />
-                    </div>
-                    <div class="card-privilege-content">
-                      <div class="card-privilege-top">
-                        <div class="card-privilege-suptitle">Пользователи</div>
-                        <div class="card-privilege-title">
-                          Интеграции с 1С и SAP
-                        </div>
-                      </div>
-                      <div class="card-privilege-description">
-                        Подстановочный текст о том, для кого разработана
-                        платформа
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                  <div class="card-privilege">
-                    <div class="card-privilege-cover">
-                      <img
-                        data-src="./images/Millenium/index/privilege/3.jpg"
-                        class="lazyload"
-                      />
-                    </div>
-                    <div class="card-privilege-content">
-                      <div class="card-privilege-top">
-                        <div class="card-privilege-suptitle">Пользователи</div>
-                        <div class="card-privilege-title">
-                          Интеграция с Яндекс. Такси в РФ, Казахстане, Беларуси,
-                          Узбекистане
-                        </div>
-                      </div>
-                      <div class="card-privilege-description">
-                        Подстановочный текст о том, для кого разработана
-                        платформа
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                  <div class="card-privilege">
-                    <div class="card-privilege-cover">
-                      <img
-                        data-src="./images/Millenium/index/privilege/4.jpg"
-                        class="lazyload"
-                      />
-                    </div>
-                    <div class="card-privilege-content">
-                      <div class="card-privilege-top">
-                        <div class="card-privilege-suptitle">
-                          компании всех уровней
-                        </div>
-                        <div class="card-privilege-title">
-                          Авансовый отчет и бюджетирование
-                        </div>
-                      </div>
-                      <div class="card-privilege-description">
-                        Подстановочный текст о разных типах клиентов
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                  <div class="card-privilege">
-                    <div class="card-privilege-cover">
-                      <img
-                        data-src="./images/Millenium/index/privilege/5.jpg"
-                        class="lazyload"
-                      />
-                    </div>
-                    <div class="card-privilege-content">
-                      <div class="card-privilege-top">
-                        <div class="card-privilege-suptitle">Пользователи</div>
-                        <div class="card-privilege-title">
-                          Инструменты для контроля кибербезопасности
-                        </div>
-                      </div>
-                      <div class="card-privilege-description">
-                        Подстановочный текст о том, для кого разработана
-                        платформа
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                  <div class="card-privilege">
-                    <div class="card-privilege-cover">
-                      <img
-                        data-src="./images/Millenium/index/privilege/6.jpg"
-                        class="lazyload"
-                      />
-                    </div>
-                    <div class="card-privilege-content">
-                      <div class="card-privilege-top">
-                        <div class="card-privilege-suptitle">Пользователи</div>
-                        <div class="card-privilege-title">
-                          Календарь командировок, отчеты и аналитика в один клик
-                        </div>
-                      </div>
-                      <div class="card-privilege-description">
-                        Подстановочный текст о том, для кого разработана
-                        платформа
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- partners -->
-        <!-- privilege -->
-        <!-- review -->
-        <section class="section section-content section-subscribe">
-          <div class="section-subscribe-background">
-            <img
-              data-src="./images/Millenium/subscribe/1.jpg"
-              class="lazyload"
-            />
-          </div>
-          <div class="container">
-            <div class="section-subscribe-inner">
-              <div class="section-subscribe-content">
-                <form action="?subscribe" class="subscribe-block">
-                  <div class="subscribe-block-content">
-                    <div class="subscribe-block-top">
-                      <div class="subscribe-block-title">
-                        <span class="h-3 fw-600">
-                          Обращайтесь к нам,<br />
-                          и мы будем рады <br />
-                          принести вам пользу
-                        </span>
-                      </div>
-                      <div class="subscribe-block-forms">
-                        <input
-                          type="name"
-                          class="form-control"
-                          placeholder="Ваше имя"
-                          value=""
-                        />
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Email"
-                          value=""
-                        />
-                      </div>
-                    </div>
-                    <div class="subscribe-block-agreement fs-xs">
-                      Нажимая кнопку “Отправить” я соглашаюсь с политикой
-                      конфиденциальности
-                    </div>
-                    <div class="subscribe-block-action">
-                      <button type="submit" class="btn btn-black w-100">
-                        Отправить
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <!-- footer -->
-      <footer class="footer">
-        <div class="footer-inner">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <a
-                  href="javascript://"
-                  target="_blank"
-                  class="link link-uppercase link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-uppercase"
-                >
-                  Напишите нам >
-                </a>
-              </div>
-              <div class="col-12">
-                <div class="footer-navigation">
-                  <div class="row">
-                    <div class="col-12">
-                      <div
-                        class="devider devider-horizontal devider--light"
-                      ></div>
-                    </div>
-                    <div class="col-12 col-md">
-                      <nav
-                        class="nav nav-horizontal nav-footer nav-footer-narrow"
-                      >
-                        <li class="nav-item">
-                          <a href="javascript://" class="nav-link"
-                            >О компании</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript://" class="nav-link">MICE</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript://" class="nav-link">Карьера</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript://" class="nav-link">Контакты</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript://" class="nav-link">Услуги</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript://" class="nav-link">Полезное</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript://" class="nav-link">Портфолио</a>
-                        </li>
-                      </nav>
-                    </div>
-                    <div class="col-12 col-md-auto">
-                      <div class="footer-socials">
-                        <div class="row">
-                          <div class="col-auto">
-                            <a
-                              href="javascript://"
-                              target="_blank"
-                              class="btn-social"
-                            >
-                              <svg
-                                width="100%"
-                                height="100%"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                focusable="false"
-                              >
-                                <use xlink:href="./sprite.svg#telegram"></use>
-                              </svg>
-                            </a>
-                          </div>
-                          <div class="col-auto">
-                            <a
-                              href="javascript://"
-                              target="_blank"
-                              class="btn-social"
-                            >
-                              <svg
-                                width="100%"
-                                height="100%"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                focusable="false"
-                              >
-                                <use xlink:href="./sprite.svg#vk"></use>
-                              </svg>
-                            </a>
-                          </div>
-                          <div class="col-auto">
-                            <a
-                              href="javascript://"
-                              target="_blank"
-                              class="btn-social"
-                            >
-                              <svg
-                                width="100%"
-                                height="100%"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                focusable="false"
-                              >
-                                <use xlink:href="./sprite.svg#youtube"></use>
-                              </svg>
-                            </a>
-                          </div>
-                          <div class="col-auto">
-                            <a
-                              href="javascript://"
-                              target="_blank"
-                              class="btn-social"
-                            >
-                              <svg
-                                width="100%"
-                                height="100%"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                focusable="false"
-                              >
-                                <use xlink:href="./sprite.svg#whatsapp"></use>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="footer-navigation">
-                  <nav
-                    class="nav nav-horizontal nav-footer justify-content-start w-fit"
-                  >
-                    <li class="nav-item">
-                      <a href="javascript://" class="nav-link">Такси</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="javascript://" class="nav-link">Безопасность</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="javascript://" class="nav-link">Интеграции</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="javascript://" class="nav-link"
-                        >Минцифры и Росреестр</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="javascript://" class="nav-link"
-                        >Политика конфиденциальности</a
-                      >
-                    </li>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-outer">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md">
-                <div class="row g-2 flex-row flex-nowrap">
+            <div class="col-auto">
+              <div class="header-menu">
+                <div class="row align-items-center">
                   <div class="col-auto">
-                    <span class="text-grey fw-bold"> Дизайн и разработка </span>
-                  </div>
-                  <div class="col">
-                    <div class="footer-author-logo">
-                      <a
-                        href="javascript://"
-                        target="_blank"
-                        class="link-opacity-50-hover"
-                      >
-                        <svg
-                          width="100%"
-                          height="100%"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <use xlink:href="./sprite.svg#sagirov"></use>
-                        </svg>
-                      </a>
-                    </div>
+                    <button type="button" class="btn btn-icon btn-icon-burger">
+                      <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        focusable="false">
+                        <use xlink:href="./sprite.svg#burger"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-auto">
-                <span class="text-grey"
-                  >© 2024 ООО «Милленниум - командировочные решения»</span
-                >
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <script type="module" src="/js/app.js"></script>
-    <script type="module" src="/js/pages/Millenium/portfolio.js"></script>
-  </body>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="content">
+      <section class="section section-content section-cover">
+        <div class="container">
+          <div class="section-cover-inner">
+            <h1 class="section-cover-title">
+              Наши <br />
+              <span class="fv-italic fw-600">проекты|</span> <br />
+              по <br />
+              интеграции
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- example code -->
+      <section class="section section-content section-privilege">
+        <div class="container">
+          <div class="section-privilege-inner">
+            <div class="row align-items-stretch">
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/1.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Двухсторонняя интеграция с ERP
+                      </div>
+                      <div class="card-privilege-title">
+                        Росводоканал
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Автоматизирован кадровый бизнес-процесс «Формирование приказа на командировку», бухгалтерский
+                      бизнес-процесс «Авансовый
+                      отчет»
+                      и автогенерация «Справки о перелете»  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/2.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Двухсторонняя интеграция с внутренними системами и SAP
+                      </div>
+                      <div class="card-privilege-title">
+                        Stada
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Автоматизирован бизнес-процесс «Управление мероприятиями»
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/3.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Двухсторонняя интеграция по всем типам заказов и метод SSO
+                      </div>
+                      <div class="card-privilege-title">
+                        Pernod Ricard
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Автоматизирован бизнес-процесс «Управление мероприятиями»
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/4.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Интеграция
+                      </div>
+                      <div class="card-privilege-title">
+                        Askona
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Автоматизирован кадровый бизнес-процесс «Формирование приказа на командировку»,  бухгалтерский
+                      бизнес-процесс «Авансовый
+                      отчет» 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/5.png" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Двухсторонняя интеграция
+                      </div>
+                      <div class="card-privilege-title">
+                        Росбанк
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Автоматизирован мэппинг номер проекта-номер продукта-цель командировки
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/6.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Двухсторонняя интеграция
+                      </div>
+                      <div class="card-privilege-title">
+                        Playrix
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Интеграция командировки и всех заказов и передача ПДн
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/7.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Двухсторонняя интеграция с  1С, Directum. Метод SSO
+                      </div>
+                      <div class="card-privilege-title">
+                        KFC
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Двусторонний обмен данными о командировке
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/8.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Двухстороння интеграция с системой ELMA
+                      </div>
+                      <div class="card-privilege-title">
+                        Алкогольная Сибирская Группа
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Результат: реализована передача данных о командировке и обратный обмен
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/9.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Интеграция с кадровой системой
+                      </div>
+                      <div class="card-privilege-title">
+                        Allianz
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Автоматизирован кадровый бизнес-процесс «Формирование приказа на командировку». 
+                      Интеграция персональных данных
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/10.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Двухсторонняя интеграция с 1C
+                      </div>
+                      <div class="card-privilege-title">
+                        DAMATE
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Интеграция с 1С и автоматизация проводок
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/11.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Интеграция с SAP
+                      </div>
+                      <div class="card-privilege-title">
+                        Меретояханефтегаз
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Интеграция с SAP
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/privilege/12.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Интеграция с внутренней бухгалтерской системой
+                      </div>
+                      <div class="card-privilege-title">
+                        Соровскнефть
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Интеграция с внутренней бухгалтерской системой
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-content section-integrations">
+        <div class="container">
+          <div class="section-integrations-inner">
+            <div class="section-integrations-title">
+              <h2 class="h-2">
+                Интеграции с корпоративными платформами с 2001 года
+              </h2>
+            </div>
+            <div class="section-integrations-content">
+              <div class="section-integrations-description h-3">
+                Автоматизация и <span class="fv-italic kudryshev-italic">мощные алгоритмы интеграции</span> <br
+                  class="d-none d-xl-inline">
+                с любой учетной системой
+              </div>
+              <div class="section-integrations-list">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card-partner">
+                      <div class="card-partner-content">
+                        <div class="card-partner-image">
+                          <img data-src="./images/Millenium/portfolio/integrations/partners/1.svg" class="lazyload" />
+                        </div>
+                      </div>
+                      <a href="javascript://" target="_blank" class="stretched-link"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card-partner">
+                      <div class="card-partner-content">
+                        <div class="card-partner-image">
+                          <img data-src="./images/Millenium/portfolio/integrations/partners/2.svg" class="lazyload" />
+                        </div>
+                      </div>
+                      <a href="javascript://" target="_blank" class="stretched-link"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card-partner">
+                      <div class="card-partner-content">
+                        <div class="card-partner-image">
+                          <img data-src="./images/Millenium/portfolio/integrations/partners/3.svg" class="lazyload" />
+                        </div>
+                      </div>
+                      <a href="javascript://" target="_blank" class="stretched-link"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card-partner">
+                      <div class="card-partner-content">
+                        <div class="card-partner-image">
+                          <img data-src="./images/Millenium/portfolio/integrations/partners/4.svg" class="lazyload" />
+                        </div>
+                      </div>
+                      <a href="javascript://" target="_blank" class="stretched-link"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card-partner">
+                      <div class="card-partner-content">
+                        <div class="card-partner-image">
+                          <img data-src="./images/Millenium/portfolio/integrations/partners/5.svg" class="lazyload" />
+                        </div>
+                      </div>
+                      <a href="javascript://" target="_blank" class="stretched-link"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card-partner">
+                      <div class="card-partner-content">
+                        <div class="card-partner-image">
+                          <img data-src="./images/Millenium/portfolio/integrations/partners/6.svg" class="lazyload" />
+                        </div>
+                      </div>
+                      <a href="javascript://" target="_blank" class="stretched-link"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card-partner">
+                      <div class="card-partner-content">
+                        <div class="card-partner-image">
+                          <img data-src="./images/Millenium/portfolio/integrations/partners/7.svg" class="lazyload" />
+                        </div>
+                      </div>
+                      <a href="javascript://" target="_blank" class="stretched-link"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card-partner">
+                      <div class="card-partner-content">
+                        <div class="card-partner-image">
+                          <img data-src="./images/Millenium/portfolio/integrations/partners/8.svg" class="lazyload" />
+                        </div>
+                      </div>
+                      <a href="javascript://" target="_blank" class="stretched-link"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-content section-privilege">
+        <div class="container">
+          <div class="section-privilege-inner">
+            <div class="row align-items-stretch">
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/advantages/1.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Преимущества
+                      </div>
+                      <div class="card-privilege-title">
+                        Улучшение взаимодействия
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Улучшение взаимодействия
+                      и координации внутри компании
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/advantages/2.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        ПреимуществА
+                      </div>
+                      <div class="card-privilege-title">
+                        Повышение эффективности
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Повышение эффективности работы благодаря автоматизации процессов
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/advantages/3.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Преимущества
+                      </div>
+                      <div class="card-privilege-title">
+                        Автоматизация авансового отчета
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Супер-современный сервис автоматизации авансового отчета
+                      с многоуровневым согласованием
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/advantages/4.jpg" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        Преимущества
+                      </div>
+                      <div class="card-privilege-title">
+                        Контроль
+                        за изменением законодательства
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Автоматический контроль
+                      за изменением законодательства
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-privilege">
+                  <div class="card-privilege-cover">
+                    <img data-src="./images/Millenium/portfolio/advantages/5.png" class="lazyload" />
+                  </div>
+                  <div class="card-privilege-content">
+                    <div class="card-privilege-top">
+                      <div class="card-privilege-suptitle">
+                        преимущества
+                      </div>
+                      <div class="card-privilege-title">
+                        Интеграция с сайтом Росстат
+                      </div>
+                    </div>
+                    <div class="card-privilege-description">
+                      Получение официальных цен на билеты и гостиницы для утверждения корпоративных ценовых лимитов
+                      на проживание и перелеты
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-content section-reviews">
+        <div class="container">
+          <div class="section-reviews-inner">
+            <div class="section-reviews-list">
+              <div class="card-review">
+                <div class="card-review-content">
+                  <div class="card-review-primary">
+                    <div class="card-banner">
+                      <div class="card-banner-image">
+                        <img data-src="./images/Millenium/index/regina-norelli.png" class="lazyload" />
+                      </div>
+                      <div class="card-banner-info">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card-review-banner">
+                              <img data-src="./images/Millenium/index/askona-white.svg" class="lazyload" />
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card-review-title fw-600">
+                              Двухсторонняя интеграция с ERP
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="card-review-link">
+                              <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" focusable="false">
+                                <use xlink:href="./sprite.svg#link"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="javascript://" class="stretched-link" target="_blank"></a>
+                    </div>
+                    <div class="card-review-advantages">
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автогенерация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          справки о перелете
+                        </div>
+                      </div>
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автоматизация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          кадрового бизнес-процесса «Формирование приказа на
+                          командировку»
+                        </div>
+                      </div>
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автоматизация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          бухгалтерского бизнес-процесса «Авансовый отчет»
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-review">
+                <div class="card-review-content">
+                  <div class="card-review-primary">
+                    <div class="card-banner">
+                      <div class="card-banner-image">
+                        <img data-src="./images/Millenium/index/regina-norelli.png" class="lazyload" />
+                      </div>
+                      <div class="card-banner-info">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card-review-banner">
+                              <img data-src="./images/Millenium/index/askona-white.svg" class="lazyload" />
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card-review-title fw-600">
+                              Двухсторонняя интеграция с ERP
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="card-review-link">
+                              <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" focusable="false">
+                                <use xlink:href="./sprite.svg#link"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="javascript://" class="stretched-link" target="_blank"></a>
+                    </div>
+                    <div class="card-review-advantages">
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автогенерация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          справки о перелете
+                        </div>
+                      </div>
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автоматизация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          кадрового бизнес-процесса «Формирование приказа на
+                          командировку»
+                        </div>
+                      </div>
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автоматизация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          бухгалтерского бизнес-процесса «Авансовый отчет»
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-review">
+                <div class="card-review-content">
+                  <div class="card-review-primary">
+                    <div class="card-banner">
+                      <div class="card-banner-image">
+                        <img data-src="./images/Millenium/index/regina-norelli.png" class="lazyload" />
+                      </div>
+                      <div class="card-banner-info">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card-review-banner">
+                              <img data-src="./images/Millenium/index/askona-white.svg" class="lazyload" />
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card-review-title fw-600">
+                              Двухсторонняя интеграция с ERP
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <div class="card-review-link">
+                              <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" focusable="false">
+                                <use xlink:href="./sprite.svg#link"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="javascript://" class="stretched-link" target="_blank"></a>
+                    </div>
+                    <div class="card-review-advantages">
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автогенерация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          справки о перелете
+                        </div>
+                      </div>
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автоматизация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          кадрового бизнес-процесса «Формирование приказа на
+                          командировку»
+                        </div>
+                      </div>
+                      <div class="card-review-advantage">
+                        <div class="card-review-advantage-title">
+                          Автоматизация
+                        </div>
+                        <div class="card-review-advantage-description">
+                          бухгалтерского бизнес-процесса «Авансовый отчет»
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-reviews-button">
+              <a href="javascript://" class="btn btn-outline-black fw-400 w-xs-100 w-xm-100 w-md-auto">Перейти к
+                портфолио</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-content section-subscribe">
+        <div class="section-subscribe-background">
+          <img data-src="./images/Millenium/subscribe/1.jpg" class="lazyload" />
+        </div>
+        <div class="container">
+          <div class="section-subscribe-inner">
+            <div class="section-subscribe-content">
+              <form action="?subscribe" class="subscribe-block">
+                <div class="subscribe-block-content">
+                  <div class="subscribe-block-top">
+                    <div class="subscribe-block-title">
+                      <span class="h-3 fw-600">
+                        Обращайтесь к нам,<br />
+                        и мы будем рады <br />
+                        принести вам пользу
+                      </span>
+                    </div>
+                    <div class="subscribe-block-forms">
+                      <input type="name" class="form-control" placeholder="Ваше имя" value="" />
+                      <input type="email" class="form-control" placeholder="Email" value="" />
+                    </div>
+                  </div>
+                  <div class="subscribe-block-agreement fs-xs">
+                    Нажимая кнопку “Отправить” я соглашаюсь с политикой
+                    конфиденциальности
+                  </div>
+                  <div class="subscribe-block-action">
+                    <button type="submit" class="btn btn-black w-100">
+                      Отправить
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <a href="javascript://" target="_blank"
+                class="link link-uppercase link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-uppercase">
+                Напишите нам >
+              </a>
+            </div>
+            <div class="col-12">
+              <div class="footer-navigation">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="devider devider-horizontal devider--light"></div>
+                  </div>
+                  <div class="col-12 col-md">
+                    <nav class="nav nav-horizontal nav-footer nav-footer-narrow">
+                      <li class="nav-item">
+                        <a href="javascript://" class="nav-link">О компании</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript://" class="nav-link">MICE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript://" class="nav-link">Карьера</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript://" class="nav-link">Контакты</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript://" class="nav-link">Услуги</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript://" class="nav-link">Полезное</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript://" class="nav-link">Портфолио</a>
+                      </li>
+                    </nav>
+                  </div>
+                  <div class="col-12 col-md-auto">
+                    <div class="footer-socials">
+                      <div class="row">
+                        <div class="col-auto">
+                          <a href="javascript://" target="_blank" class="btn-social">
+                            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true" focusable="false">
+                              <use xlink:href="./sprite.svg#telegram"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="col-auto">
+                          <a href="javascript://" target="_blank" class="btn-social">
+                            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true" focusable="false">
+                              <use xlink:href="./sprite.svg#vk"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="col-auto">
+                          <a href="javascript://" target="_blank" class="btn-social">
+                            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true" focusable="false">
+                              <use xlink:href="./sprite.svg#youtube"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="col-auto">
+                          <a href="javascript://" target="_blank" class="btn-social">
+                            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true" focusable="false">
+                              <use xlink:href="./sprite.svg#whatsapp"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="footer-navigation">
+                <nav class="nav nav-horizontal nav-footer justify-content-start w-fit">
+                  <li class="nav-item">
+                    <a href="javascript://" class="nav-link">Такси</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript://" class="nav-link">Безопасность</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript://" class="nav-link">Интеграции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript://" class="nav-link">Минцифры и Росреестр</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript://" class="nav-link">Политика конфиденциальности</a>
+                  </li>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-outer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md">
+              <div class="row g-2 flex-row flex-nowrap">
+                <div class="col-auto">
+                  <span class="text-grey fw-bold"> Дизайн и разработка </span>
+                </div>
+                <div class="col">
+                  <div class="footer-author-logo">
+                    <a href="javascript://" target="_blank" class="link-opacity-50-hover">
+                      <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        focusable="false">
+                        <use xlink:href="./sprite.svg#sagirov"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-auto">
+              <span class="text-grey">© 2024 ООО «Милленниум - командировочные решения»</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/pages/Millenium/portfolio.js"></script>
+</body>
+
 </html>
