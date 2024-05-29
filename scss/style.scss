@@ -9,6 +9,7 @@
 
 // layouts
 @import "./layouts/header";
+@import "./layouts/footer";
 
 // components
 @import "./components/animation";
@@ -59,9 +60,7 @@ body {
   position: relative;
   z-index: 1;
   height: 100%;
-  font-feature-settings:
-    "clig" off,
-    "liga" off;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: "Kudryashev W08 Regular";
   font-size: 1rem;
   font-style: normal;
