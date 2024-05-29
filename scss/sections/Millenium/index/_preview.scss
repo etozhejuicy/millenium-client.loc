@@ -1,8 +1,11 @@
 :root {
   --section-preview-margin-y: 4.725rem;
   --section-preview-color: var(--white-rgb);
+  --section-preview-gap: 1.625rem;
   @media (min-width: 1200px) {
     --section-preview-margin-y: 9.375rem;
+    --section-preview-height: 66.875rem;
+    --section-preview-gap: 3.375rem;
   }
 }
 
@@ -11,6 +14,7 @@
   z-index: 1;
   display: flex;
   width: 100%;
+  max-height: var(--section-preview-height);
   min-height: calc(100vh - (var(--header-height)));
   min-height: calc(100dvh - (var(--header-height)));
   color: rgba(var(--section-preview-color), 1);
@@ -20,6 +24,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     user-select: none;
     pointer-events: none;
@@ -45,7 +51,22 @@
   &-inner {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     flex: 1;
+    row-gap: var(--section-preview-gap);
+    column-gap: var(--section-preview-gap);
+  }
+  &-title {
+    font-family: "C059";
+  }
+  &-link {
+    font-family: "Gotham";
+    font-size: 1rem;
+    @media (min-width: 1200px) {
+      font-size: 1.625rem;
+    }
+    & > * {
+      text-decoration: none;
+    }
   }
 }
